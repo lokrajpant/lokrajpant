@@ -5,150 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lok Raj Pant - Portfolio</title>
-  <style>
-   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
-    padding: 50px 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.hero {
-    background: #333;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.hero .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.hero-text {
-    max-width: 600px;
-}
-
-.hero img.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.cta-btn {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.cta-btn:hover {
-    background-color: #45a049;
-}
-
-.projects-list {
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-}
-
-.project-item {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 45%;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-footer p {
-    margin: 0;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" onclick="showTab('home')">Home</a></li>
+                <li><a href="javascript:void(0);" onclick="showTab('about')">About</a></li>
+                <li><a href="javascript:void(0);" onclick="showTab('projects')">Projects</a></li>
+                <li><a href="javascript:void(0);" onclick="showTab('contact')">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container">
+    <section id="home" class="tab-content active">
+        <div class="container hero">
             <img src="lok.jpg" alt="My Photo" class="profile-img">
             <div class="hero-text">
                 <h1>Hello, I'm Lok Raj Pant</h1>
                 <p>I'm a passionate developer with expertise in web development and data science. Welcome to my portfolio!</p>
-                <a href="#about" class="cta-btn">Learn More</a>
+                <a href="javascript:void(0);" onclick="showTab('about')" class="cta-btn">Learn More</a>
             </div>
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="tab-content">
         <h2>About Me</h2>
         <p>
             I am a software engineer with a passion for building scalable web applications. I have experience with
@@ -157,7 +39,7 @@ footer p {
         </p>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="tab-content">
         <h2>My Projects</h2>
         <div class="projects-list">
             <!-- Example Project 1 -->
@@ -173,7 +55,7 @@ footer p {
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="tab-content">
         <h2>Contact Me</h2>
         <p>If you would like to get in touch, feel free to reach out via email or social media!</p>
     </section>
@@ -181,5 +63,16 @@ footer p {
     <footer>
         <p>&copy; 2025 Lok Raj Pant. All Rights Reserved.</p>
     </footer>
+
+    <script>
+      function showTab(tabId) {
+          // Hide all sections
+          const sections = document.querySelectorAll('.tab-content');
+          sections.forEach(section => section.classList.remove('active'));
+
+          // Show the selected section
+          document.getElementById(tabId).classList.add('active');
+      }
+    </script>
 </body>
 </html>
