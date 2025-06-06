@@ -1,77 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lok Raj Pant - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Lok Raj Pant - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="javascript:void(0);" onclick="showTab('home')">Home</a></li>
-                <li><a href="javascript:void(0);" onclick="showTab('about')">About</a></li>
-                <li><a href="javascript:void(0);" onclick="showTab('projects')">Projects</a></li>
-                <li><a href="javascript:void(0);" onclick="showTab('contact')">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="javascript:void(0);" onclick="showTab('home')">Home</a></li>
+        <li><a href="javascript:void(0);" onclick="showTab('about')">About</a></li>
+        <li><a href="javascript:void(0);" onclick="showTab('projects')">Projects</a></li>
+        <li><a href="javascript:void(0);" onclick="showTab('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="home" class="tab-content active">
-        <div class="container hero">
-            <img src="lok.jpg" alt="My Photo" class="profile-img">
-            <div class="hero-text">
-                <h1>Hello, I'm Lok Raj Pant</h1>
-                <p>I'm a passionate researcher with expertise in Low Temperature Physics. Welcome to my portfolio!</p>
-                <a href="javascript:void(0);" onclick="showTab('about')" class="cta-btn">Learn More</a>
-            </div>
-        </div>
-    </section>
+  <section id="home" class="tab-content active">
+    <div class="hero">
+      <div class="hero-text-box">
+        <h1>Hello, I'm Lok Raj Pant</h1>
+        <p>I'm a passionate researcher with expertise in Low Temperature Physics. Welcome to my portfolio!</p>
+        <a href="javascript:void(0);" onclick="showTab('about')" class="cta-btn">Learn More</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="about" class="tab-content">
-        <h2>About Me</h2>
-        <p>
-            I am a physics researcher with a passion for low temperature Physics.
-        </p>
-    </section>
+  <section id="about" class="tab-content">
+    <h2>About Me</h2>
+    <p>I am a physics researcher with a passion for low temperature Physics.</p>
+  </section>
 
-    <section id="projects" class="tab-content">
-        <h2>My Projects</h2>
-        <div class="projects-list">
-            <!-- Example Project 1 -->
-            <div class="project-item">
-                <h3>Project 1</h3>
-                <p>Description of the project goes here. Include technologies and purpose.</p>
-            </div>
-            <!-- Example Project 2 -->
-            <div class="project-item">
-                <h3>Project 2</h3>
-                <p>Description of the project goes here. Include technologies and purpose.</p>
-            </div>
-        </div>
-    </section>
+  <section id="projects" class="tab-content">
+    <h2>My Projects</h2>
+    <div class="projects-list">
+      <div class="project-item">
+        <h3>Project 1</h3>
+        <p>Description of the project goes here. Include technologies and purpose.</p>
+      </div>
+      <div class="project-item">
+        <h3>Project 2</h3>
+        <p>Description of the project goes here. Include technologies and purpose.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="tab-content">
-        <h2>Contact Me</h2>
-        <p>If you would like to get in touch, feel free to reach out via email or social media!</p>
-    </section>
+  <section id="contact" class="tab-content">
+    <h2>Contact Me</h2>
+    <p>If you would like to get in touch, feel free to reach out via email or social media!</p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Lok Raj Pant. All Rights Reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Lok Raj Pant. All Rights Reserved.</p>
+  </footer>
 
-    <script>
-      function showTab(tabId) {
-          // Hide all sections
-          const sections = document.querySelectorAll('.tab-content');
-          sections.forEach(section => section.classList.remove('active'));
-
-          // Show the selected section
-          document.getElementById(tabId).classList.add('active');
-      }
-    </script>
+  <script>
+    function showTab(tabId) {
+      const sections = document.querySelectorAll('.tab-content');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
 </body>
 </html>
-
