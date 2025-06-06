@@ -54,16 +54,29 @@ header nav ul li a:hover {
     display: block;
 }
 
+#home,
 .hero {
-    background: white;
-    color: #333;
-    min-height: 100vh;
+    background: white;        /* Full white background */
+    color: black;             /* Default text color black */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;        /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
     text-align: center;
 }
+
+.hero-text-box {
+    background-color: #333;   /* Black box background */
+    color: white;             /* White text */
+    padding: 30px 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 
 
 .hero .container {
