@@ -57,13 +57,12 @@ header nav ul li a:hover {
 .hero {
     background: white;
     color: #333;
-    padding: 50px 0;
-    text-align: center;
-
-    min-height: 100vh; 
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .hero .container {
