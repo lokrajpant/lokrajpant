@@ -55,8 +55,8 @@ header nav ul li a:hover {
 }
 
 .hero {
-    background: #333;
-    color: white;
+    background: white;
+    color: #333;
     padding: 50px 0;
     text-align: center;
 
