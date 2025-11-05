@@ -73,9 +73,10 @@ header nav ul li a:hover {
 }
 
 .hero img.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 200px;
+    height: auto;
+    border-radius: 0;
+    object-fit: cover;
 }
 
 h1 {
