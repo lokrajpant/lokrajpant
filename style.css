@@ -46,7 +46,7 @@ header nav ul li a:hover {
     display: none;
     padding: 50px 20px;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 100%;
     text-align: center;
 }
 
