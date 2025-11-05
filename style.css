@@ -69,7 +69,9 @@ header nav ul li a:hover {
 }
 
 .hero-text {
-    max-width: 600px;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .hero img.profile-img {
